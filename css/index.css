@@ -89,8 +89,8 @@ nav {
 .sobreMi {
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(1, 400px);
-  grid-template-areas: "successful" "informacion" "imgUno" "imgDos" "imgTres";
+  grid-template-columns: repeat(1, 800px);
+  grid-template-areas: "successful" "informacion";
   grid-gap: 10px; }
   .sobreMi .successful {
     grid-area: successful;
@@ -98,43 +98,20 @@ nav {
   .sobreMi .informacion {
     grid-area: informacion;
     padding: 10px; }
-  .sobreMi .imgUno {
-    grid-area: imgUno;
-    background-color: #9d4edd49;
-    padding: 15px; }
-  .sobreMi .imgDos {
-    grid-area: imgDos;
-    background-color: #9d4edd49;
-    padding: 15px; }
-  .sobreMi .imgTres {
-    grid-area: imgTres;
-    background-color: #9d4edd49;
-    padding: 15px; }
   .sobreMi img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    width: 310px;
+    height: auto;
+    background-color: #9d4edd49; }
 
 @media screen and (min-width: 720px) {
   .sobreMi {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 350px);
-    grid-template-areas: "successful successful successful" "informacion informacion informacion" "imgUno imgDos imgTres"; }
-    .sobreMi .successful {
-      grid-area: successful; }
-    .sobreMi .informacion {
-      grid-area: informacion; }
-    .sobreMi .imgUno {
-      grid-area: imgUno; }
-    .sobreMi .imgDos {
-      grid-area: imgDos; }
-    .sobreMi .imgTres {
-      grid-area: imgTres; }
-    .sobreMi img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; } }
+    width: auto; }
+  .imagenesLogo {
+    display: flex;
+    justify-content: space-around; }
+  img {
+    width: 200px;
+    object-fit: cover; } }
 
 /* featured work */
 .featuredWork {
@@ -151,50 +128,33 @@ nav {
   padding: 15px; }
 
 @media screen and (min-width: 768px) {
-  .tituloParrafoImg .tituloParrafo {
+  .tituloParrafoImg {
+    justify-content: center;
+    display: flex; }
+  .tituloParrafo {
     display: flex;
     flex-direction: column;
-    justify-content: start; }
-    .tituloParrafoImg .tituloParrafo .nombreTrabajo {
+    justify-content: center;
+    align-items: center; }
+    .tituloParrafo .nombreTrabajo {
       width: 370px; }
-      .tituloParrafoImg .tituloParrafo .nombreTrabajo h3 {
+      .tituloParrafo .nombreTrabajo h3 {
         font-size: 21px;
         padding: 10px;
         text-align: center; }
+    .tituloParrafo .explicacionTrabajo {
+      width: 370px;
+      height: 260; }
+      .tituloParrafo .explicacionTrabajo p {
+        font-family: 'Merriweather', serif;
+        font-size: 18px; }
   .tituloParrafoImg .screenTrabajo img {
-    float: right;
+    float: center;
     width: 630px;
     height: auto;
     background-color: #9d4edd49;
-    padding: 20px; }
-  .tituloParrafoImg {
-    flex-direction: row; } }
-
-.tituloParrafo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-  .tituloParrafo .nombreTrabajo {
-    width: 370px; }
-    .tituloParrafo .nombreTrabajo h3 {
-      font-size: 21px;
-      padding: 10px;
-      text-align: center; }
-  .tituloParrafo .explicacionTrabajo {
-    width: 370px;
-    height: 260; }
-    .tituloParrafo .explicacionTrabajo p {
-      font-family: 'Merriweather', serif;
-      font-size: 18px; }
-
-.tituloParrafoImg .screenTrabajo img {
-  float: center;
-  width: 630px;
-  height: auto;
-  background-color: #9d4edd49;
-  padding: 20px;
-  margin: 15px; }
+    padding: 20px;
+    margin: 15px; } }
 
 @media screen and (min-width: 720px) {
   /* Get in touch and text*/
@@ -203,24 +163,25 @@ nav {
     flex-direction: column;
     align-items: left;
     margin-left: 20px; }
-  .getInTouch1 h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 40px;
-    padding: 10px; }
-  .getInTouch1 p {
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
-    margin: 10 0 0 0;
-    width: 670px;
-    padding: 10px; }
-  /*form*/
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 670px;
-    background-color: #f9f9f9;
-    padding: 30px;
-    margin: 30px; }
+    .getInTouch1 h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 40px;
+      padding: 10px; }
+    .getInTouch1 p {
+      font-family: 'Merriweather', serif;
+      font-size: 25px;
+      margin: 10 0 0 0;
+      width: 670px;
+      padding: 10px; } }
+
+/*form*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 670px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin: 30px; }
   .flex-container legend {
     width: 94px;
     height: 30px;
@@ -230,20 +191,20 @@ nav {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     margin-bottom: 20px; }
-  .name {
+  .flex-container .name {
     font-family: 'Lato', sans-serif;
     font-size: 20px; }
-  .name input {
-    width: 100%;
-    font-size: 20px;
-    margin: 0; }
-  .email {
+    .flex-container .name input {
+      width: 100%;
+      font-size: 20px;
+      margin: 0; }
+  .flex-container .email {
     font-family: 'Lato', sans-serif;
     font-size: 20px; }
-  .email input {
-    width: 100%;
-    font-size: 20px;
-    margin: 0; }
+    .flex-container .email input {
+      width: 100%;
+      font-size: 20px;
+      margin: 0; }
   .flex-container .project {
     width: 132px;
     height: 30px;
@@ -253,15 +214,16 @@ nav {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     margin-bottom: 20px; }
-  .flex-container textarea {
+  .flex-container .textArea {
     width: 100%;
+    height: 100%;
     font-size: 20px;
     margin: 0; }
   .flex-container .submit input {
     font-family: 'Lato', sans-serif;
     font-size: 25px;
     padding: 17.5px 25px;
-    background-color: #9d4edd49; } }
+    background-color: #9d4edd49; }
 
 /* Portfolio*/
 .portfolio {
@@ -269,40 +231,6 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: 10px; }
-
-.portfolio h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 40px;
-  padding: 15px; }
-
-.portfolio p {
-  font-family: 'Merriweather', serif;
-  font-size: 25px;
-  margin: 10 0 0 0;
-  width: 670px; }
-
-@media screen and (min-width: 480px) {
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px; }
-  .portfolio h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    padding: 15px; }
-  .portfolio p {
-    font-family: 'Merriweather', serif;
-    font-size: 15px;
-    margin: 10 0 0 0;
-    width: 670px; } }
-
-@media screen and (min-width: 720px) {
-  .portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px; }
   .portfolio h2 {
     font-family: 'Lato', sans-serif;
     font-size: 40px;
@@ -311,7 +239,39 @@ nav {
     font-family: 'Merriweather', serif;
     font-size: 25px;
     margin: 10 0 0 0;
-    width: 670px; } }
+    width: 670px; }
+
+@media screen and (min-width: 480px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; }
+    .portfolio h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 30px;
+      padding: 15px; }
+    .portfolio p {
+      font-family: 'Merriweather', serif;
+      font-size: 15px;
+      margin: 10 0 0 0;
+      width: 670px; } }
+
+@media screen and (min-width: 720px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px; }
+    .portfolio h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 40px;
+      padding: 15px; }
+    .portfolio p {
+      font-family: 'Merriweather', serif;
+      font-size: 25px;
+      margin: 10 0 0 0;
+      width: 670px; } }
 
 /* About*/
 .about {
@@ -319,23 +279,20 @@ nav {
   flex-direction: column;
   align-items: center;
   margin: 10px; }
-
-.about h1 {
-  font-family: 'Lato', sans-serif;
-  font-size: 40px;
-  padding: 15px; }
-
-.about p {
-  font-family: 'Merriweather', serif;
-  font-size: 25px;
-  margin: 10 0 0 0;
-  width: 900px; }
-
-img {
-  width: auto;
-  height: 180px;
-  float: left;
-  margin: 10px; }
+  .about h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    padding: 15px; }
+  .about p {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    margin: 10 0 0 0;
+    width: 900px; }
+    .about p img {
+      width: auto;
+      height: 180px;
+      float: left;
+      margin: 10px; }
 
 @media screen and (min-width: 480px) {
   .about {
@@ -397,7 +354,7 @@ img {
     margin: 7px; }
   .skills p img {
     width: auto;
-    height: 30px;
+    height: 50px;
     float: left;
     margin: 5px; }
   .design {
@@ -412,17 +369,15 @@ img {
   .design p {
     font-family: 'Merriweather', serif;
     font-size: 20px;
-    margin: 10 0 0 0;
     width: 900px;
+    height: auto;
     text-align: center; }
   .skillsDesign {
     background-color: #9d4edd49;
     box-sizing: content-box;
+    margin: 10px;
     padding: 15px;
-    width: 200px;
-    margin-top: 15px;
-    margin-left: 214px;
-    margin-right: 214px; }
+    width: 200px; }
   .skillsDesign h4 {
     font-family: 'Lato', sans-serif;
     font-size: 1.2em;
@@ -434,9 +389,4 @@ img {
   .skillsDesign p img {
     width: auto;
     height: 30px;
-    float: left;
     margin: 5px; } }
-
-footer p {
-  font-family: 'Lato', sans-serif;
-  color: white; }
