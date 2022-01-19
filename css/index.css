@@ -285,6 +285,10 @@ nav {
         padding: 7.2px 18px;
         background-color: #9D4EDD; }
 
+@media screen and (min-width: 768px) {
+  nav {
+    flex-direction: row; } }
+
 /* Portfolio*/
 .portfolio {
   display: flex;
