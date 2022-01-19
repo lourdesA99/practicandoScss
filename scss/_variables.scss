@@ -1,0 +1,10 @@
+$title-font:'Lato',
+sans-serif;
+$another-font:'Merriweather',
+serif;
+$cool-purple: #9D4EDD;
+@mixin titulos {
+    font-family: $title-font;
+    font-size: 35px;
+    padding: 15px;
+}

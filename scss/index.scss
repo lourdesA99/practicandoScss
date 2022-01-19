@@ -1,3 +1,7 @@
+@import "variables";
+@import "inicio";
+@import "about";
+@import "contacto";
 * {
     margin: 0;
     padding: 0;
@@ -14,14 +18,14 @@ body {
 }
 
 .navegador {
-    font-family: 'Lato', sans-serif;
+    font-family: $title-font;
     background-color: white;
     text-transform: uppercase;
     align-items: center;
     .miNombre {
-        font-family: 'Lato', sans-serif;
+        font-family: $title-font;
         justify-content: center;
-        color: #9D4EDD;
+        color: $cool-purple;
         font-weight: bold;
         font-size: 20px;
         padding: 10px;
@@ -43,8 +47,8 @@ nav {
     z-index: 10;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
     ul {
-        font-family: 'Lato', sans-serif;
-        color: #9D4EDD;
+        font-family: $title-font;
+        color: $cool-purple;
         display: flex;
         justify-content: right;
         align-items: center;
@@ -52,10 +56,10 @@ nav {
         li {
             font-size: 15px;
             padding: 10px;
-            color: #9D4EDD;
+            color: $cool-purple;
             font-weight: bold;
             a {
-                color: #9D4EDD;
+                color: $cool-purple;
                 display: block;
                 padding: 7.2px 18px;
                 text-transform: uppercase;
@@ -69,216 +73,14 @@ nav {
                 color: white;
             }
             .getInTouch {
-                font-family: 'Lato', sans-serif;
+                font-family: $title-font;
                 color: white;
                 font-size: 20px;
                 font-weight: bold;
                 padding: 7.2px 18px;
-                background-color: #9D4EDD;
+                background-color: $cool-purple;
             }
         }
-    }
-}
-
-@media screen and (min-width:768px) {
-    nav {
-        flex-direction: row;
-    }
-}
-
-.header {
-    padding: 60px 40px 80px;
-    .sobreMi {
-        color: inherit;
-        text-align: center;
-        h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: bold;
-            font-size: 40px;
-            text-align: center;
-        }
-        p {
-            font-family: 'Merriweather', serif;
-            font-size: 18px;
-        }
-    }
-}
-
-
-/*SOBRE MI*/
-
-.sobreMi {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(1, 800px);
-    grid-template-areas: "successful""informacion";
-    grid-gap: 10px;
-    .successful {
-        grid-area: successful;
-        padding: 10px;
-    }
-    .informacion {
-        grid-area: informacion;
-        padding: 10px;
-    }
-    img {
-        width: 310px;
-        height: auto;
-        background-color: #9d4edd49;
-    }
-}
-
-@media screen and (min-width:720px) {
-    .sobreMi {
-        width: auto;
-    }
-    .imagenesLogo {
-        display: flex;
-        justify-content: space-around;
-    }
-    img {
-        width: 200px;
-        object-fit: cover;
-    }
-}
-
-
-/* featured work */
-
-.featuredWork {
-    font-family: 'Lato', sans-serif;
-    h2 {
-        text-align: center;
-        font-size: 35px;
-        padding: 20px;
-    }
-}
-
-.featuredWork .tituloParrafoImg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-}
-
-@media screen and (min-width:768px) {
-    .tituloParrafoImg {
-        justify-content: center;
-        display: flex;
-    }
-    .tituloParrafo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .nombreTrabajo {
-            width: 370px;
-            h3 {
-                font-size: 21px;
-                padding: 10px;
-                text-align: center;
-            }
-        }
-        .explicacionTrabajo {
-            width: 370px;
-            height: 260;
-            p {
-                font-family: 'Merriweather', serif;
-                font-size: 18px;
-            }
-        }
-    }
-    .tituloParrafoImg .screenTrabajo img {
-        float: center;
-        width: 630px;
-        height: auto;
-        background-color: #9d4edd49;
-        padding: 20px;
-        margin: 15px;
-    }
-}
-
-@media screen and (min-width:720px) {
-    /* Get in touch and text*/
-    .getInTouch1 {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        margin-left: 20px;
-        h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 40px;
-            padding: 10px;
-        }
-        p {
-            font-family: 'Merriweather', serif;
-            font-size: 25px;
-            margin: 10 0 0 0;
-            width: 670px;
-            padding: 10px;
-        }
-    }
-}
-
-
-/*form*/
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    width: 670px;
-    background-color: rgb(249, 249, 249);
-    padding: 30px;
-    margin: 30px;
-    legend {
-        width: 94px;
-        height: 30px;
-        font-family: 'Lato', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        margin-bottom: 20px;
-    }
-    .name {
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        input {
-            width: 100%;
-            font-size: 20px;
-            margin: 0;
-        }
-    }
-    .email {
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        input {
-            width: 100%;
-            font-size: 20px;
-            margin: 0;
-        }
-    }
-    .project {
-        width: 132px;
-        height: 30px;
-        font-family: 'Lato', sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        margin-bottom: 20px;
-    }
-    .textArea {
-        width: 100%;
-        height: 100%;
-        font-size: 20px;
-        margin: 0;
-    }
-    .submit input {
-        font-family: 'Lato', sans-serif;
-        font-size: 25px;
-        padding: 17.5px 25px;
-        background-color: #9d4edd49;
     }
 }
 
@@ -291,12 +93,11 @@ nav {
     align-items: center;
     margin: 10px;
     h2 {
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
+        @include titulos;
         padding: 15px;
     }
     p {
-        font-family: 'Merriweather', serif;
+        font-family: $another-font;
         font-size: 25px;
         margin: 10 0 0 0;
         width: 670px;
@@ -310,12 +111,10 @@ nav {
         align-items: center;
         margin: 10px;
         h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 30px;
-            padding: 15px;
+            @include titulos;
         }
         p {
-            font-family: 'Merriweather', serif;
+            font-family: $another-font;
             font-size: 15px;
             margin: 10 0 0 0;
             width: 670px;
@@ -330,12 +129,10 @@ nav {
         align-items: center;
         margin: 10px;
         h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 40px;
-            padding: 15px;
+            @include titulos;
         }
         p {
-            font-family: 'Merriweather', serif;
+            font-family: $another-font;
             font-size: 25px;
             margin: 10 0 0 0;
             width: 670px;
@@ -344,146 +141,6 @@ nav {
 }
 
 
-/* About*/
+/*FOOTER*/
 
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
-        padding: 15px;
-    }
-    p {
-        font-family: 'Merriweather', serif;
-        font-size: 25px;
-        margin: 10 0 0 0;
-        width: 900px;
-        img {
-            width: auto;
-            height: 180px;
-            float: left;
-            margin: 10px;
-        }
-    }
-}
-
-@media screen and (min-width:480px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-    .about h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 30px;
-        padding: 15px;
-    }
-    .about p {
-        font-family: 'Merriweather', serif;
-        font-size: 15px;
-        margin: 10 0 0 0;
-        width: 670px;
-    }
-    img {
-        width: auto;
-        height: 150px;
-        float: left;
-        margin: 10px;
-    }
-}
-
-@media screen and (min-width:720px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-    }
-    .about h1 {
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
-        padding: 15px;
-    }
-    .about p {
-        font-family: 'Merriweather', serif;
-        font-size: 20px;
-        margin: 10 0 0 0;
-        width: 900px;
-    }
-    img {
-        width: auto;
-        height: 180px;
-        float: left;
-        margin: 10px;
-    }
-    .skills {
-        float: right;
-        background-color: #9d4edd49;
-        box-sizing: content-box;
-        padding: 15px;
-        width: 200px;
-        margin-top: 15px;
-        margin-left: 214px;
-        margin-right: 214px;
-    }
-    .skills h4 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2em;
-        margin: 5px;
-    }
-    .skills p {
-        font-family: 'Merriweather', serif;
-        font-size: 1em;
-        margin: 7px;
-    }
-    .skills p img {
-        width: auto;
-        height: 50px;
-        float: left;
-        margin: 5px;
-    }
-    .design {
-        text-align: center;
-        margin: 10px;
-    }
-    .design h2 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2em;
-        box-sizing: border-box;
-        margin-left: 214px;
-        margin-right: 214px;
-    }
-    .design p {
-        font-family: 'Merriweather', serif;
-        font-size: 20px;
-        width: 900px;
-        height: auto;
-        text-align: center;
-    }
-    .skillsDesign {
-        background-color: #9d4edd49;
-        box-sizing: content-box;
-        margin: 10px;
-        padding: 15px;
-        width: 200px;
-    }
-    .skillsDesign h4 {
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2em;
-        margin: 5px;
-    }
-    .skillsDesign p {
-        font-family: 'Merriweather', serif;
-        font-size: 1em;
-        margin: 7px;
-    }
-    .skillsDesign p img {
-        width: auto;
-        height: 30px;
-        margin: 5px;
-    }
-}
+$redes: ( twitter: #51aff8, facebook: #2956a3, linkedin: #0076b8, youtube: #ce1312);
