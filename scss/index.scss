@@ -2,6 +2,7 @@
 @import "inicio";
 @import "about";
 @import "contacto";
+@import "portfolio";
 * {
     margin: 0;
     padding: 0;
@@ -37,116 +38,24 @@ body {
 
 nav {
     position: sticky;
-    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 1em;
-    z-index: 10;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
-    ul {
+    .titulo {
         font-family: $title-font;
         color: $cool-purple;
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        list-style: none;
-        li {
-            font-size: 15px;
-            padding: 10px;
+        font-weight: bold;
+    }
+    li {
+        .color {
+            color: $cool-purple
+        }
+        .color:hover {
+            transform: scale(1, 1);
+            background-color: #9d4edd49;
+            color: white;
+        }
+        .getInTouch {
             color: $cool-purple;
-            font-weight: bold;
-            a {
-                color: $cool-purple;
-                display: block;
-                padding: 7.2px 18px;
-                text-transform: uppercase;
-                text-decoration: none;
-                font-size: 20px;
-                transition: height 2s;
-            }
-            a:hover {
-                transform: scale(1, 1);
-                background-color: #9d4edd49;
-                color: white;
-            }
-            .getInTouch {
-                font-family: $title-font;
-                color: white;
-                font-size: 20px;
-                font-weight: bold;
-                padding: 7.2px 18px;
-                background-color: $cool-purple;
-            }
         }
     }
 }
-
-@media screen and (min-width:768px) {
-    nav {
-        flex-direction: row;
-    }
-}
-
-
-/* Portfolio*/
-
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    h2 {
-        @include titulos;
-        padding: 15px;
-    }
-    p {
-        font-family: $another-font;
-        font-size: 25px;
-        margin: 10 0 0 0;
-        width: 670px;
-    }
-}
-
-@media screen and (min-width:480px) {
-    .portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        h2 {
-            @include titulos;
-        }
-        p {
-            font-family: $another-font;
-            font-size: 15px;
-            margin: 10 0 0 0;
-            width: 670px;
-        }
-    }
-}
-
-@media screen and (min-width:720px) {
-    .portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 10px;
-        h2 {
-            @include titulos;
-        }
-        p {
-            font-family: $another-font;
-            font-size: 25px;
-            margin: 10 0 0 0;
-            width: 670px;
-        }
-    }
-}
-
-
-/*FOOTER*/
-
-$redes: ( twitter: #51aff8, facebook: #2956a3, linkedin: #0076b8, youtube: #ce1312);

@@ -9,18 +9,27 @@
   font-size: 20px; }
 
 .sobreMi-Titulo {
-  font-family: "Lato", sans-serif; }
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  font-weight: bold; }
 
 .sobreMi-Explicacion {
-  font-family: "Merriweather", serif; }
+  font-family: 'Merriweather', serif;
+  font-size: 20px; }
 
 /* featured work */
 .featuredWork {
   font-family: "Lato", sans-serif; }
   .featuredWork h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     padding: 20px; }
+  .featuredWork h5 {
+    font-family: "Lato", sans-serif;
+    font-size: 25px; }
+  .featuredWork p {
+    font-family: "Merriweather", serif;
+    font-size: 20px; }
 
 /* About*/
 .about {
@@ -146,24 +155,15 @@
     height: 30px;
     margin: 5px; } }
 
-@media screen and (min-width: 720px) {
-  /* Get in touch and text*/
-  .getInTouch1 {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 20px; }
-    .getInTouch1 h2 {
-      font-family: "Lato", sans-serif;
-      font-size: 35px;
-      padding: 15px;
-      padding: 10px; }
-    .getInTouch1 p {
-      font-family: "Merriweather", serif;
-      font-size: 25px;
-      margin: 10 0 0 0;
-      width: 670px;
-      padding: 10px; } }
+/* Get in touch and text*/
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  padding: 15px; }
+
+p {
+  font-family: "Merriweather", serif;
+  font-size: 25px; }
 
 /*form*/
 .flex-container {
@@ -216,79 +216,6 @@
     padding: 17.5px 25px;
     background-color: #9d4edd49; }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth; }
-
-body {
-  padding: 0px, 0px;
-  background-color: white; }
-
-.navegador {
-  font-family: "Lato", sans-serif;
-  background-color: white;
-  text-transform: uppercase;
-  align-items: center; }
-  .navegador .miNombre {
-    font-family: "Lato", sans-serif;
-    justify-content: center;
-    color: #9D4EDD;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 10px; }
-
-/* navegacion menu */
-nav {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 1em;
-  z-index: 10;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
-  nav ul {
-    font-family: "Lato", sans-serif;
-    color: #9D4EDD;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    list-style: none; }
-    nav ul li {
-      font-size: 15px;
-      padding: 10px;
-      color: #9D4EDD;
-      font-weight: bold; }
-      nav ul li a {
-        color: #9D4EDD;
-        display: block;
-        padding: 7.2px 18px;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 20px;
-        transition: height 2s; }
-      nav ul li a:hover {
-        transform: scale(1, 1);
-        background-color: #9d4edd49;
-        color: white; }
-      nav ul li .getInTouch {
-        font-family: "Lato", sans-serif;
-        color: white;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 7.2px 18px;
-        background-color: #9D4EDD; }
-
-@media screen and (min-width: 768px) {
-  nav {
-    flex-direction: row; } }
-
 /* Portfolio*/
 .portfolio {
   display: flex;
@@ -306,7 +233,7 @@ nav {
     margin: 10 0 0 0;
     width: 670px; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 414px) {
   .portfolio {
     display: flex;
     flex-direction: column;
@@ -338,4 +265,60 @@ nav {
       margin: 10 0 0 0;
       width: 670px; } }
 
-/*FOOTER*/
+.trabajos h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 25px; }
+
+.trabajos p {
+  font-family: "Merriweather", serif;
+  font-size: 20px; }
+
+.boton {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  background-color: #9d4edd49;
+  padding: 2px;
+  width: 170px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  padding: 0px, 0px;
+  background-color: white; }
+
+.navegador {
+  font-family: "Lato", sans-serif;
+  background-color: white;
+  text-transform: uppercase;
+  align-items: center; }
+  .navegador .miNombre {
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    color: #9D4EDD;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px; }
+
+/* navegacion menu */
+nav {
+  position: sticky;
+  width: 100%;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
+  nav .titulo {
+    font-family: "Lato", sans-serif;
+    color: #9D4EDD;
+    font-weight: bold; }
+  nav li .color {
+    color: #9D4EDD; }
+  nav li .color:hover {
+    transform: scale(1, 1);
+    background-color: #9d4edd49;
+    color: white; }
+  nav li .getInTouch {
+    color: #9D4EDD; }

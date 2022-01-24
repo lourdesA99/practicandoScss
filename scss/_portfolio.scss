@@ -1,0 +1,73 @@
+/* Portfolio*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    h2 {
+        @include titulos;
+        padding: 15px;
+    }
+    p {
+        font-family: $another-font;
+        font-size: 25px;
+        margin: 10 0 0 0;
+        width: 670px;
+    }
+}
+
+@media screen and (min-width:414px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        h2 {
+            @include titulos;
+        }
+        p {
+            font-family: $another-font;
+            font-size: 15px;
+            margin: 10 0 0 0;
+            width: 670px;
+        }
+    }
+}
+
+@media screen and (min-width:720px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        h2 {
+            @include titulos;
+        }
+        p {
+            font-family: $another-font;
+            font-size: 25px;
+            margin: 10 0 0 0;
+            width: 670px;
+        }
+    }
+}
+
+.trabajos {
+    h5 {
+        font-family: $title-font;
+        font-size: 25px;
+    }
+    p {
+        font-family: $another-font;
+        font-size: 20px;
+    }
+}
+
+.boton {
+    font-family: $title-font;
+    font-size: 20px;
+    background-color: #9d4edd49;
+    padding: 2px;
+    width: 170px;
+}
