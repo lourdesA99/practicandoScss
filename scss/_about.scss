@@ -26,9 +26,12 @@
 .skills {
     background-color: #9d4edd49;
     box-sizing: content-box;
-    width: 300px;
+    width: 310px;
     text-align: center;
     margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     h4 {
         font-family: $title-font;
         font-size: 1.2em;
