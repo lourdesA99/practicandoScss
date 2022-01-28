@@ -63,10 +63,9 @@
     }
 }
 
-.boton {
+.boton1 {
     font-family: $title-font;
-    font-size: 20px;
-    background-color: #9d4edd49;
-    padding: 2px;
-    width: 170px;
+    border-bottom-color: $cool-purple;
+    margin: auto;
+    color: $cool-purple;
 }

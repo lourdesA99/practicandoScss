@@ -1,70 +1,91 @@
-    /* Get in touch and text*/
-    
-    h1 {
-        @include titulos;
+/* Get in touch and text*/
+
+h1 {
+    @include titulos;
+}
+
+p {
+    font-family: $another-font;
+    font-size: 25px;
+}
+
+
+/*form*/
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(249, 249, 249);
+    padding: 30px;
+    margin: 30px;
+    legend {
+        width: 94px;
+        height: 30px;
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        margin-bottom: 20px;
     }
-    
-    p {
-        font-family: $another-font;
-        font-size: 25px;
-    }
-    /*form*/
-    
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(249, 249, 249);
-        padding: 30px;
-        margin: 30px;
-        legend {
-            width: 94px;
-            height: 30px;
-            font-family: $title-font;
-            font-weight: bold;
-            font-size: 20px;
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            margin-bottom: 20px;
-        }
-        .name {
-            font-family: $title-font;
-            font-size: 20px;
-            input {
-                width: 100%;
-                font-size: 20px;
-                margin: 0;
-            }
-        }
-        .email {
-            font-family: $title-font;
-            font-size: 20px;
-            input {
-                width: 100%;
-                font-size: 20px;
-                margin: 0;
-            }
-        }
-        .project {
-            width: 132px;
-            height: 30px;
-            font-family: $title-font;
-            font-weight: bold;
-            font-size: 20px;
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            margin-bottom: 20px;
-        }
-        .textArea {
+    .name {
+        font-family: $title-font;
+        font-size: 20px;
+        input {
             width: 100%;
-            height: 100%;
             font-size: 20px;
             margin: 0;
         }
-        .submit input {
-            font-family: $title-font;
-            font-size: 25px;
-            padding: 17.5px 25px;
-            background-color: #9d4edd49;
-            width: 120px;
+    }
+    .email {
+        font-family: $title-font;
+        font-size: 20px;
+        input {
+            width: 100%;
+            font-size: 20px;
+            margin: 0;
         }
     }
+    .project {
+        width: 132px;
+        height: 30px;
+        font-family: $title-font;
+        font-weight: bold;
+        font-size: 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        margin-bottom: 20px;
+    }
+    .textArea {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        margin: 0;
+    }
+    .submit input {
+        font-family: $title-font;
+        font-size: 25px;
+        padding: 17.5px 25px;
+        background-color: #9d4edd49;
+        width: 120px;
+    }
+    .boton1 {
+        font-family: $title-font;
+        border-bottom-color: $cool-purple;
+        margin: auto;
+        color: $cool-purple;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .project {
+        width: 132px;
+        height: 30px;
+    }
+    .boton1 {
+        font-family: $title-font;
+        border-bottom-color: $cool-purple;
+        margin: auto;
+        color: $cool-purple;
+    }
+}

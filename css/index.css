@@ -234,6 +234,21 @@ p {
     padding: 17.5px 25px;
     background-color: #9d4edd49;
     width: 120px; }
+  .flex-container .boton1 {
+    font-family: "Lato", sans-serif;
+    border-bottom-color: #9D4EDD;
+    margin: auto;
+    color: #9D4EDD; }
+
+@media screen and (min-width: 720px) {
+  .project {
+    width: 132px;
+    height: 30px; }
+  .boton1 {
+    font-family: "Lato", sans-serif;
+    border-bottom-color: #9D4EDD;
+    margin: auto;
+    color: #9D4EDD; } }
 
 /* Portfolio*/
 .portfolio {
@@ -291,12 +306,11 @@ p {
   font-family: "Merriweather", serif;
   font-size: 20px; }
 
-.boton {
+.boton1 {
   font-family: "Lato", sans-serif;
-  font-size: 20px;
-  background-color: #9d4edd49;
-  padding: 2px;
-  width: 170px; }
+  border-bottom-color: #9D4EDD;
+  margin: auto;
+  color: #9D4EDD; }
 
 * {
   margin: 0;
@@ -339,7 +353,8 @@ nav {
     background-color: #9d4edd49;
     color: white; }
   nav li .getInTouch {
-    color: #9D4EDD; }
+    color: #9D4EDD;
+    background-color: #9D4EDD; }
 
 footer {
   margin-top: 10px; }
