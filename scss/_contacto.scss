@@ -2,11 +2,12 @@
 
 h1 {
     @include titulos;
+    font-size: 28px;
 }
 
 p {
     font-family: $another-font;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 
@@ -19,14 +20,12 @@ p {
     padding: 30px;
     margin: 30px;
     legend {
-        width: 94px;
-        height: 30px;
         font-family: $title-font;
         font-weight: bold;
         font-size: 20px;
         border-bottom-style: solid;
         border-bottom-width: 1px;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     .name {
         font-family: $title-font;
@@ -47,8 +46,6 @@ p {
         }
     }
     .project {
-        width: 132px;
-        height: 30px;
         font-family: $title-font;
         font-weight: bold;
         font-size: 20px;
@@ -78,9 +75,12 @@ p {
 }
 
 @media screen and (min-width:720px) {
-    .project {
-        width: 132px;
-        height: 30px;
+    h1 {
+        @include titulos;
+    }
+    p {
+        font-family: $another-font;
+        font-size: 25px;
     }
     .boton1 {
         font-family: $title-font;

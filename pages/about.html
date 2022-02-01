@@ -27,93 +27,76 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
     <!-- My stylesheet -->
-    <link rel="stylesheet" href="./css/index.css">
-    <title>My Portfolio | Home</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>My Portfolio | About me</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
 
-            <a class="titulo navbar-brand " href="./index.html">LOURDES ANTUÑA</a>
+            <a class="titulo navbar-brand " href="../index.html">LOURDES ANTUÑA</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
             </button>
             <div class=" collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class=" color nav-link" aria-current="page" href="./index.html">HOME</a>
+                        <a class=" color nav-link" aria-current="page" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class=" color nav-link" href="./pages/about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class=" color nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                        <a class=" color nav-link" href="portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="getInTouch nav-item">
-                        <a class=" color nav-link" href="./pages/contacto.html">GET IN TOUCH</a>
+                        <a class=" color nav-link" href="contacto.html">GET IN TOUCH</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header>
-        <div class="container principal">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-center ">Successful Front-end Development</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p class="text-center ">
-                        Hi. I'm Lourdes, a freelance Front-end Developer looking for my first experiences.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <section>
-        <div class="container sobreMi">
-            <div class="row">
-                <div class="col-12 col-lg-6 d-flex justify-content-center my-5 ">
-                    <div class="card shadow w-75 p-3 mb-5 bg-white rounded">
-                        <img src="./media/responsive.jpg" class="card-img-top " style="width: 100%;" alt="Computadoras con titulo responsive">
-                        <div class="card-body">
-                            <h2 class=" text-center card-title sobreMi-Titulo">Front-end development</h2>
-                            <p class="card-text text-center sobreMi-Explicacion">Responsive websites built for an optimal user experience that achieves your business goals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 d-flex justify-content-center my-5">
-                    <div class="segCard card shadow w-75 p-3 mb-5 bg-white rounded">
-                        <img src="./media/tools.png" class="card-img-top align-self-center col-12" alt="herramientas de trabajo">
-                        <div class="card-body m-2">
-                            <h2 class="text-center card-title sobreMi-Titulo">Performance, SEO, & accessibility testing</h2>
-                            <p class="card-text text-center sobreMi-Explicacion">Make your website fast, easy to find, and reach the widest audience possible.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="featuredWork">
-        <h2>Featured Work</h2>
-        <div class="card mb-3">
-            <div class="row g-0 shadow w-75 p-3  bg-white rounded align-self-center">
-                <div class="col-md-7">
-                    <img src="./media/Jouska.PNG" class="img-fluid rounded-start" alt="Tienda Jouska, screen de su pagina">
-                </div>
-                <div class=" col-md-5">
-                    <div class="text justify-content-center card-body " style="margin: auto;">
-                        <h5 class="card-title">Jouska</h5>
-                        <p class="card-text">I was the designer and front-end developer for the initial Jouska website in 2015</p>
+    <div class="about">
+        <h1>About Lourdes Antuña</h1>
 
-                    </div>
-                </div>
-            </div>
+        <p>
+            <img src="../media/lourdes.jpg" alt="imagen cv"> I am a Front-end Developer looking for my first experiences, graduate of CoderHouse.
+            <br> I create successful websites that are fast, easy to use, and built with best practices. I work to make a better web; one that is fast, easy to use, beautiful, accessible to all, and frustration-free. Regardless of your specific business
+            requirements, in solving these challenges, you have a great chance of finding success online.
+            <p class="prueba4">I also have a passion for design. Given that producing a modern website requires the combination of design, server technology, and the layer that users interacts with, I believe having experience in both design and development allows for making
+                the most optimal user experiences.
+            </p>
+            <p>I use HTML, CSS, and JavaScript to produce responsive websites and web apps that provide users the best and most appropriate experience suited to their device and browser.
+            </p>
+    </div>
+    <div class="skills">
+        <h2>Skills</h2>
+
+        <div class="logoSkill">
+            <img src="../media/js3.png" alt="">
+            <p>JavaScript</p>
         </div>
-    </section>
+
+        <div class="logoSkill">
+            <img src="../media/html3.png" alt="">
+            <p>HTLM</p>
+        </div>
+
+        <div class="logoSkill">
+            <img src="../media/css3.png" alt="">
+            <p> Responsive CSS</p>
+        </div>
+        <h2>Skills of Design</h2>
+        <div class="logoSkillDesign">
+            <img src="../media/psLogo.png" alt="">
+            <p> Responsive CSS</p>
+        </div>
+        <div class="logoSkillDesign">
+            <img src="../media/aiLogo.png" alt="">
+            <p> Responsive CSS</p>
+        </div>
+    </div>
 </body>
 <footer class="text-center text-white" style="background-color: #b1b1b172;">
     <!-- Grid container -->
@@ -137,6 +120,7 @@
         <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
+
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- MDB -->
